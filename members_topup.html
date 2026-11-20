@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title> Members & Top-Up </title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body>
+
+        <div class="flex flex-row gap-[5px]">
+            <!-- DIV SIDEBAR KIRI -->
+            <div class="h-screen flex items-center">
+                <!-- SIDEBAR MENU -->
+                <div class="w-[280px] h-[550px] bg-[#EAEAEA] mx-[20px] my-[20px]">
+                    <!-- TEKS MENU -->
+                    <div class="flex flex-row gap-5 ml-[20px] mt-[20px] items-center">
+                        <div class="flex flex-col gap-[5px]">
+                            <div class="w-[35px] h-[7px] bg-[#1E3A8A]"></div>
+                            <div class="w-[35px] h-[7px] bg-[#1E3A8A]"></div>
+                            <div class="w-[35px] h-[7px] bg-[#1E3A8A]"></div>
+                        </div>
+                        <h1 class="font-mono font-bold text-[#1E3A8A] text-[25px]"> MENU </h1>
+                    </div>
+
+                    <!-- LIST MENU -->
+                    <ul class="ml-[20px] mt-[30px] space-y-5">
+                        <li class="font-mono font-bold text-[#1E3A8A] text-[20px]"> <a href="dashboard_admin.html"> > Dashboard </a></li>
+                        <li class="font-mono font-bold text-[#1E3A8A] text-[20px]"> <a href="comp_status.html"> > Computer Status </a></li>
+                        <li class="font-mono font-bold text-[#1E3A8A] text-[20px]"> <a href="members_topup.html" class="bg-white opacity-70"> > Members & Top-Up </a></li>
+                        <li class="font-mono font-bold text-[#1E3A8A] text-[20px]"> <a href="settings.html"> > Settings </a></li>
+                        <li class="font-mono font-bold text-[#1E3A8A] text-[20px]"> <a href="reports.html"> > Reports </a></li>
+                        <li class="font-mono font-bold text-[#1E3A8A] text-[20px]"> <a href="homepage.html"> > Log Out </a></li>
+                    </ul>
+
+                    <!-- LOGO FOOTER -->
+                    <div class="flex flex-col items-center">
+                    <img src="gambar/logonetbill.png" class="w-[150px] h-auto mt-[80px]">
+                    </div>
+                </div>
+            </div>
+
+            <!-- DIV SEBELAH KANAN -->
+            <!-- DASHBOARD -->
+            <div class="h-screen flex flex-col gap-[1px]">
+                <!-- TEKS MEMBERS & TOP-UP -->
+                <div class="w-[925px] h-[55px] bg-[#EAEAEA] my-[20px] flex items-center justify-center">
+                    <h1 class="font-mono font-bold text-[#1E3A8A] text-[30px]"> MEMBERS & TOP-UP </h1>
+                </div>
+
+                <!-- DIV BACKGROUND -->
+                <div class="w-[925px] h-[470px] bg-[#EAEAEA] p-5">
+
+                    <!-- PENCARIAN DAN TOMBOL TAMBAH MEMBER -->
+                    <div class="flex flex-row justify-between">
+                        <form>
+                            <div class="relative w-[250px]">
+
+                                <!-- INPUT PLACEHOLDER -->
+                                <input 
+                                type="text" 
+                                placeholder="Find username" 
+                                class="w-full border-2 border-[#1E3A8A] pl-[10px] pr-[50px] py-[3px] font-mono focus:outline-none focus:ring-1 focus:ring-[#1E3A8A]" />
+
+                                <!-- IKON PENCARIAN -->
+                                <a href=""
+                                class="absolute inset-y-0 right-3 flex items-center">
+                                <img src="gambar/icon_search.png" class="w-[18px] h-[18px]">
+                                </a>
+
+                            </div>
+                        </form>
+                        <button class="w-[190px] h-[40px] bg-[#1E3A8A] shadow-md">
+                            <a href="addnewmember_member.html" class="font-mono font-bold text-[#EAEAEA] text-[20px]"> Add New Members </a>
+                        </button>
+                    </div>
+
+                    <!-- TABLE MEMBER -->
+                    <table class="w-full border-collapse font-mono mt-5">
+                        <!-- JUDUL TABLE -->
+                        <thead>
+                            <tr class="border-b-2 border-[#1E3A8A] text-[#1E3A8A] text-[15px]"> 
+                                <th class="py-2 text-center"> Username </th>
+                                <th class="py-2 text-center"> Status </th>
+                                <th class="py-2 text-center"> Remaining Time </th>
+                                <th class="py-2 text-center"> Action </th>
+                                <th class="py-2 text-center"> Last Top-Up </th>
+                            </tr>
+                        </thead>
+                        <!-- ISI TABLE -->
+                        <tbody>
+                            <tr class="border-b-2 border-[#1E3A8A] text-[#1E3A8A] text-[15px]">
+                                <td class="py-2 text-center"> userone </td>
+                                <td class="py-2 text-center"> Active </td>
+                                <td class="py-2 text-center"> 00:24:00 </td>
+                                <td class="py-2 text-center"> <a href="details_userone.html" class="font-mono text-[#1E3A8A] text-[15px] underline"> Details</a> </td>
+                                <td class="py-2 text-center"> 30/12/2025 | <a href="topup_userone.html" class="font-mono text-[#1E3A8A] text-[15px] underline"> Top-Up </a> </td>
+                            </tr>
+                            <tr class="border-b-2 border-[#1E3A8A] text-[#1E3A8A] text-[15px]">
+                                <td class="py-2 text-center"> usertwo </td>
+                                <td class="py-2 text-center"> Active </td>
+                                <td class="py-2 text-center"> 00:36:00 </td>
+                                <td class="py-2 text-center"> <a href="details_usertwo.html" class="font-mono text-[#1E3A8A] text-[15px] underline"> Details</a> </td>
+                                <td class="py-2 text-center"> 31/12/2025 | <a href="topup_usertwo.html" class="font-mono text-[#1E3A8A] text-[15px] underline"> Top-Up </a> </td>
+                            </tr>
+                            <tr class="border-b-2 border-[#1E3A8A] text-[#1E3A8A] text-[15px]">
+                                <td class="py-2 text-center"> - </td>
+                                <td class="py-2 text-center"> - </td>
+                                <td class="py-2 text-center"> - </td>
+                                <td class="py-2 text-center"> - </td>
+                                <td class="py-2 text-center"> - </td>
+                            </tr>
+                            <tr class="border-b-2 border-[#1E3A8A] text-[#1E3A8A] text-[15px]">
+                                <td class="py-2 text-center"> - </td>
+                                <td class="py-2 text-center"> - </td>
+                                <td class="py-2 text-center"> - </td>
+                                <td class="py-2 text-center"> - </td>
+                                <td class="py-2 text-center"> - </td>
+                            </tr>
+                            <tr class="border-b-2 border-[#1E3A8A] text-[#1E3A8A] text-[15px]">
+                                <td class="py-2 text-center"> - </td>
+                                <td class="py-2 text-center"> - </td>
+                                <td class="py-2 text-center"> - </td>
+                                <td class="py-2 text-center"> - </td>
+                                <td class="py-2 text-center"> - </td>
+                            </tr>
+                            <tr class="border-b-2 border-[#1E3A8A] text-[#1E3A8A] text-[15px]">
+                                <td class="py-2 text-center"> - </td>
+                                <td class="py-2 text-center"> - </td>
+                                <td class="py-2 text-center"> - </td>
+                                <td class="py-2 text-center"> - </td>
+                                <td class="py-2 text-center"> - </td>
+                            </tr>
+                            <tr class="border-b-2 border-[#1E3A8A] text-[#1E3A8A] text-[15px]">
+                                <td class="py-2 text-center"> - </td>
+                                <td class="py-2 text-center"> - </td>
+                                <td class="py-2 text-center"> - </td>
+                                <td class="py-2 text-center"> - </td>
+                                <td class="py-2 text-center"> - </td>
+                            </tr>
+                            <tr class="border-b-2 border-[#1E3A8A] text-[#1E3A8A] text-[15px]">
+                                <td class="py-2 text-center"> - </td>
+                                <td class="py-2 text-center"> - </td>
+                                <td class="py-2 text-center"> - </td>
+                                <td class="py-2 text-center"> - </td>
+                                <td class="py-2 text-center"> - </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+</html>

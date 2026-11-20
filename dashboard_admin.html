@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title> Dashboard Admin </title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body>
+
+        <div class="flex flex-row gap-[5px]">
+            <!-- DIV SIDEBAR KIRI -->
+            <div class="h-screen flex items-center">
+                <!-- SIDEBAR MENU -->
+                <div class="w-[280px] h-[550px] bg-[#EAEAEA] mx-[20px] my-[20px]">
+                    <!-- TEKS MENU -->
+                    <div class="flex flex-row gap-5 ml-[20px] mt-[20px] items-center">
+                        <div class="flex flex-col gap-[5px]">
+                            <div class="w-[35px] h-[7px] bg-[#1E3A8A]"></div>
+                            <div class="w-[35px] h-[7px] bg-[#1E3A8A]"></div>
+                            <div class="w-[35px] h-[7px] bg-[#1E3A8A]"></div>
+                        </div>
+                        <h1 class="font-mono font-bold text-[#1E3A8A] text-[25px]"> MENU </h1>
+                    </div>
+
+                    <!-- LIST MENU -->
+                    <ul class="ml-[20px] mt-[30px] space-y-5">
+                        <li class="font-mono font-bold text-[#1E3A8A] text-[20px]"> <a href="dashboard_admin.html" class="bg-white opacity-70"> > Dashboard </a></li>
+                        <li class="font-mono font-bold text-[#1E3A8A] text-[20px]"> <a href="comp_status.html"> > Computer Status </a></li>
+                        <li class="font-mono font-bold text-[#1E3A8A] text-[20px]"> <a href="members_topup.html"> > Members & Top-Up </a></li>
+                        <li class="font-mono font-bold text-[#1E3A8A] text-[20px]"> <a href="settings.html"> > Settings </a></li>
+                        <li class="font-mono font-bold text-[#1E3A8A] text-[20px]"> <a href="reports.html"> > Reports </a></li>
+                        <li class="font-mono font-bold text-[#1E3A8A] text-[20px]"> <a href="homepage.html"> > Log Out </a></li>
+                    </ul>
+
+                    <!-- LOGO FOOTER -->
+                    <div class="flex flex-col items-center">
+                    <img src="gambar/logonetbill.png" class="w-[150px] h-auto mt-[80px]">
+                    </div>
+                </div>
+            </div>
+
+            <!-- DIV SEBELAH KANAN -->
+            <!-- DASHBOARD -->
+            <div class="h-screen flex flex-col gap-[1px]">
+                <!-- TEKS DASHBOARD ADMIN -->
+                <div class="w-[925px] h-[55px] bg-[#EAEAEA] my-[20px] flex items-center justify-center">
+                    <h1 class="font-mono font-bold text-[#1E3A8A] text-[30px]"> DASHBOARD ADMIN </h1>
+                </div>
+
+                <!-- HELLO USER DAN ADMIN -->
+                <div class="flex flex-row justify-between">
+                    <p class="font-mono font-bold text-[#1E3A8A] text-[20px]"> [ Hello, GhaidaHanna ] </p>
+                    <p class="font-mono font-bold text-[#1E3A8A] text-[20px]"> [ You're an Admin ] </p>
+                </div>
+
+                <!-- QUICK STATISTICS -->
+                <div class="flex justify-center mt-[25px]">
+                    <!-- BACKGROUND -->
+                    <div class="w-[350px] h-[130px] bg-[#EAEAEA] shadow-md flex-col">
+                        <!-- JUDUL -->
+                        <div class="flex flex-row items-center gap-5 justify-center p-3">
+                            <img src="gambar/statistics.png" class="w-[35px] h-auto">
+                            <p class="font-mono font-bold text-[#1E3A8A] text-[20px]"> [ Quick Statistics ] </p>
+                        </div>
+
+                        <!-- ISI STATISTICS -->
+                        <div class="flex flex-col border-[2px] border-[#1E3A8A] items-center justify-center mx-4 mt-2">
+                            <p class="font-mono text-[#1E3A8A] text-[15px]"> PC : 2 Active </p>
+                            <p class="font-mono text-[#1E3A8A] text-[15px]"> Users : 2 Online </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NEWEST ACTIVITIES -->
+                <div class="flex justify-center mt-[25px]">
+                    <!-- BACKGROUND -->
+                    <div class="w-[925px] h-[257px] bg-[#EAEAEA] flex-col px-5 py-2">
+                        <!-- JUDUL -->
+                        <div class="flex flex-row items-center gap-5 justify-center p-4">
+                            <img src="gambar/users.png" class="w-[35px] h-auto">
+                            <p class="font-mono font-bold text-[#1E3A8A] text-[20px]"> [ Newest Activities ] </p>
+                        </div>
+
+                        <div class="flex flex-row gap-5">
+                            <!-- TABLE ACTIVITIES -->
+                            <table class="w-full border-collapse font-mono">
+                                <!-- JUDUL TABLE -->
+                                <thead>
+                                    <tr class="border-b-2 border-[#1E3A8A] text-[#1E3A8A] text-[15px]"> 
+                                        <th class="py-2 text-center"> Username </th>
+                                        <th class="py-2 text-center"> PC </th>
+                                        <th class="py-2 text-center"> Start </th>
+                                        <th class="py-2 text-center"> Time Left </th>
+                                    </tr>
+                                </thead>
+
+                                <!-- ISI TABLE -->
+                                <tbody>
+                                    <tr class="border-b-2 border-[#1E3A8A] text-[#1E3A8A] text-[15px]">
+                                        <td class="py-2 text-center"> userone </td>
+                                        <td class="py-2 text-center"> PC01 </td>
+                                        <td class="py-2 text-center"> 12:24 </td>
+                                        <td class="py-2 text-center"> 00:24:00 </td>
+                                    </tr>
+                                    <tr class="border-b-2 border-[#1E3A8A] text-[#1E3A8A] text-[15px]">
+                                        <td class="py-2 text-center"> usertwo </td>
+                                        <td class="py-2 text-center"> PC03 </td>
+                                        <td class="py-2 text-center"> 12:50 </td>
+                                        <td class="py-2 text-center"> 00:36:00 </td>
+                                    </tr>
+                                    <tr class="border-b-2 border-[#1E3A8A] text-[#1E3A8A] text-[15px]">
+                                        <td class="py-2 text-center"> - </td>
+                                        <td class="py-2 text-center"> - </td>
+                                        <td class="py-2 text-center"> - </td>
+                                        <td class="py-2 text-center"> - </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="w-full border-collapse font-mono">
+                                <!-- JUDUL TABLE -->
+                                <thead>
+                                    <tr class="border-b-2 border-[#1E3A8A] text-[#1E3A8A] text-[15px]"> 
+                                        <th class="py-2 text-center"> Username </th>
+                                        <th class="py-2 text-center"> PC </th>
+                                        <th class="py-2 text-center"> Start </th>
+                                        <th class="py-2 text-center"> Time Left </th>
+                                    </tr>
+                                </thead>
+
+                                <!-- ISI TABLE -->
+                                <tbody>
+                                    <tr class="border-b-2 border-[#1E3A8A] text-[#1E3A8A] text-[15px]">
+                                        <td class="py-2 text-center"> - </td>
+                                        <td class="py-2 text-center"> - </td>
+                                        <td class="py-2 text-center"> - </td>
+                                        <td class="py-2 text-center"> - </td>
+                                    </tr>
+                                    <tr class="border-b-2 border-[#1E3A8A] text-[#1E3A8A] text-[15px]">
+                                        <td class="py-2 text-center"> - </td>
+                                        <td class="py-2 text-center"> - </td>
+                                        <td class="py-2 text-center"> - </td>
+                                        <td class="py-2 text-center"> - </td>
+                                    </tr>
+                                    <tr class="border-b-2 border-[#1E3A8A] text-[#1E3A8A] text-[15px]">
+                                        <td class="py-2 text-center"> - </td>
+                                        <td class="py-2 text-center"> - </td>
+                                        <td class="py-2 text-center"> - </td>
+                                        <td class="py-2 text-center"> - </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+</html>

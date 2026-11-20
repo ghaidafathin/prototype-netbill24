@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title> Settings </title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body>
+
+        <div class="flex flex-row gap-[5px]">
+            <!-- DIV SIDEBAR KIRI -->
+            <div class="h-screen flex items-center">
+                <!-- SIDEBAR MENU -->
+                <div class="w-[280px] h-[550px] bg-[#EAEAEA] mx-[20px] my-[20px]">
+                    <!-- TEKS MENU -->
+                    <div class="flex flex-row gap-5 ml-[20px] mt-[20px] items-center">
+                        <div class="flex flex-col gap-[5px]">
+                            <div class="w-[35px] h-[7px] bg-[#1E3A8A]"></div>
+                            <div class="w-[35px] h-[7px] bg-[#1E3A8A]"></div>
+                            <div class="w-[35px] h-[7px] bg-[#1E3A8A]"></div>
+                        </div>
+                        <h1 class="font-mono font-bold text-[#1E3A8A] text-[25px]"> MENU </h1>
+                    </div>
+
+                    <!-- LIST MENU -->
+                    <ul class="ml-[20px] mt-[30px] space-y-5">
+                        <li class="font-mono font-bold text-[#1E3A8A] text-[20px]"> <a href="dashboard_admin.html"> > Dashboard </a></li>
+                        <li class="font-mono font-bold text-[#1E3A8A] text-[20px]"> <a href="comp_status.html"> > Computer Status </a></li>
+                        <li class="font-mono font-bold text-[#1E3A8A] text-[20px]"> <a href="members_topup.html"> > Members & Top-Up </a></li>
+                        <li class="font-mono font-bold text-[#1E3A8A] text-[20px]"> <a href="settings.html" class="bg-white opacity-70"> > Settings </a></li>
+                        <li class="font-mono font-bold text-[#1E3A8A] text-[20px]"> <a href="reports.html"> > Reports </a></li>
+                        <li class="font-mono font-bold text-[#1E3A8A] text-[20px]"> <a href="homepage.html"> > Log Out </a></li>
+                    </ul>
+
+                    <!-- LOGO FOOTER -->
+                    <div class="flex flex-col items-center">
+                    <img src="gambar/logonetbill.png" class="w-[150px] h-auto mt-[80px]">
+                    </div>
+                </div>
+            </div>
+
+            <!-- DIV SEBELAH KANAN -->
+            <!-- DASHBOARD -->
+            <div class="h-screen flex flex-col gap-[1px]">
+                <!-- TEKS DASHBOARD ADMIN -->
+                <div class="w-[925px] h-[55px] bg-[#EAEAEA] my-[20px] flex items-center justify-center">
+                    <h1 class="font-mono font-bold text-[#1E3A8A] text-[30px]"> SETTINGS & REPORTS </h1>
+                </div>
+
+                <!-- ACC INFORMATION -->
+                <div class="w-[450px] h-[280px] bg-[#EAEAEA] px-5 py-3">
+                    <div class="flex flex-col">
+                        <!-- HEADER -->
+                        <h1 class="font-mono font-bold text-[#1E3A8A] text-[20px] text-center"> [ Account Information ] </h1>
+
+                        <!-- BOX INFORMASI -->
+                        <div class="flex flex-col items-start gap-2 mt-4">
+                            <!-- USERNAME -->
+                            <div>
+                                <p class="font-mono font-bold text-[#1E3A8A] text-[15px]"> Username: </p>
+                                <div class="flex flex-row gap-3 items-center">
+                                    <div class="border-2 border-[#1E3A8A] w-[250px] h-[35px] flex items-center p-4 mt-[3px]">
+                                        <span class="font-mono text-[#1E3A8A] text-[15px]"> admin1224 </span>
+                                    </div>
+                                    <a href="editusn_admin.html">
+                                        <img src="gambar/editusn.png" class="w-[27px] h-[27px]">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- PASSWORD -->
+                            <div>
+                                <p class="font-mono font-bold text-[#1E3A8A] text-[15px]"> Password: </p>
+                                <div class="flex flex-row gap-3 items-center">
+                                    <div class="border-2 border-[#1E3A8A] w-[250px] h-[35px] flex items-center p-4 mt-[3px]">
+                                        <span class="font-mono text-[#1E3A8A] text-[15px]"> admin12324 </span>
+                                    </div>
+                                    <a href="newpw_admin.html ">
+                                        <img src="gambar/changepw.png" class="w-[27px] h-[27px]">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- EMAIL ADDRESS -->
+                            <div>
+                                <p class="font-mono font-bold text-[#1E3A8A] text-[15px]"> Email Address: </p>
+                                <div class="flex flex-row gap-3 items-center">
+                                    <div class="border-2 border-[#1E3A8A] w-[250px] h-[35px] flex items-center p-4 mt-[3px]">
+                                        <span class="font-mono text-[#1E3A8A] text-[15px]"> admin24@gmail.com </span>
+                                    </div>
+                                    <a href="newemailadd_admin.html">
+                                        <img src="gambar/changeemail.png" class="w-[30px] h-[30px]">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TOMBOL PILIHAN -->
+                <div class="items-start flex flex-col gap-3 mt-[90px]">
+                    <!-- CHANGE ACC INFO -->
+                    <button class="bg-[#EAEAEA] px-4 py-2">
+                        <a href="newaccinfo_admin.html" class="font-mono font-bold text-[#1E3A8A] text-[15px]"> Change Account Information </a>
+                    </button>
+                    <!-- ANOTHER ADMIN -->
+                    <button class="bg-[#EAEAEA] px-4 py-2">
+                        <a href="newadmin_admin.html" class="font-mono font-bold text-[#1E3A8A] text-[15px]"> Add Another Admin </a>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+</html>

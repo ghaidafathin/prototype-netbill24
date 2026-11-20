@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title> Login Page: Admin </title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body>
+        <div class="min-h-screen flex justify-center items-center">
+            <!-- DIV UTAMA -->
+            <div class="w-[35%] h-auto bg-[#EAEAEA] flex flex-col items-center px-3 py-5">
+
+                <!-- TEKS ATAS -->
+                <h1 class="font-mono font-bold text-[#1E3A8A] text-[20px]"> Login as Admin </h1>
+
+                <!-- GARIS BATAS -->
+                <div class="h-[2px] w-[90%] bg-[#1E3A8A] my-4"></div>
+
+                <!-- PLACEHOLDER USN DAN PW -->
+                <form class="self-start flex flex-col gap-2 items-left ml-[24px] mt-[10px]">
+                    <!-- kolom atas (username) -->
+                    <div>
+                        <label class="block font-mono font-bold text-[#1E3A8A] text-[15px]">
+                            Username:
+                        </label>
+                        <input
+                        type="text"
+                        placeholder="Enter your username"
+                        class="w-full border-2 border-[#1E3A8A] pl-[10px] pr-[50px] py-[3px] font-mono focus:outline-none focus:ring-1 focus:ring-[#1E3A8A]" />
+                    </div>
+
+                    <!-- kolom bawah (password) -->
+                    <div>
+                        <label class="block font-mono font-bold text-[#1E3A8A] text-[15px]">
+                            Password:
+                        </label>
+                        <input
+                        type="text"
+                        placeholder="Enter your password"
+                        class="w-full border-2 border-[#1E3A8A] pl-[10px] pr-[50px] py-[3px] font-mono focus:outline-none focus:ring-1 focus:ring-[#1E3A8A]" />
+                    </div>
+                </form>
+
+                <!-- TOMBOL LOGIN -->
+                <button class="self-start ml-[24px] mt-[20px] px-[20px] py-[4px] rounded-[5px] bg-[#1E3A8A] font-mono font-bold text-[#EAEAEA] text-[15px]">
+                    <a href="dashboard_admin.html"> Login </a>
+                </button>
+
+                <!-- LUPA PASSWORD -->
+                <div class="self-start flex flex-row justify-between w-[90%] mx-auto mt-[10px]">
+                    <a href="forgotpassword_admin.html" class="font-mono text-[#1E3A8A] italic underline"> Lupa Password? </a>
+                </div>
+
+                <!-- GARIS BATAS -->
+                <div class="h-[2px] w-[90%] bg-[#1E3A8A] my-4 mt-[40px]"></div>
+
+                <!-- LOGO UNTUK FOOTER -->
+                <img src="gambar/logonetbill.png" class="w-[200px] h-auto my-[10px]">
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title> Top-Up: usertwo </title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body>
+
+        <div class="min-h-screen flex justify-center items-center">
+            <!-- DIV UTAMA -->
+            <div class="w-[35%] h-auto bg-[#EAEAEA] p-10 flex flex-col  gap-5 shadow-md">
+
+                <!-- TITLE ACC INFO -->
+                <p class="font-mono font-bold text-[#1E3A8A] text-[25px] text-center"> Top-Up Member 'usertwo' </p>
+                <p class="font-mono text-[#1E3A8A] text-[20px] text-center"> Time Remaining: 00:36:00 </p>
+
+                <!-- PILIHAN WAKTU -->
+                <form>
+                    <div class="flex flex-col items-center gap-2">
+
+                        <label class="block font-mono font-bold text-[#1E3A8A] text-[15px]">
+                            Choose Time:
+                        </label>
+                        <select class="w-full border-2 border-[#1E3A8A] px-[10px] py-[5px] font-mono focus:outline-none">
+                            <option value=""> Add Time </option>
+                            <option value="1/2 hour"> 30 Minutes </option>
+                            <option value="1 hour"> 1 hour </option>
+                            <option value="1.5 hour"> 1 hour 30 Minutes </option>
+                            <option value="2 hour"> 2 hours </option>
+                            <option value="2.5 hour"> 2 hours 30 minutes </option>
+                            <option value="3 hour"> 3 hours </option>
+                            <option value="3.5 hour"> 3 hours 30 minutes </option>
+                            <option value="4 hour"> 4 hours </option>
+                            <option value="4.5 hour"> 4 hours 30 minutes </option>
+                            <option value="5 hour"> 5 hours </option>
+                        </select>
+
+                        <span class="font-mono italic text-[15px] text-[#1E3A8A] mt-3 mb-3"> Total: (JS Auto-Cal)</span>
+                        
+                        <label class="block font-mono font-bold text-[#1E3A8A] text-[15px]">
+                            Choose Payment Method:
+                        </label>
+                        <select class="w-full border-2 border-[#1E3A8A] px-[10px] py-[5px] font-mono focus:outline-none">
+                            <option value=""> Payment Method </option>
+                            <option value="cash"> Cash </option>
+                            <option value="barcode"> QRIS </option>
+                        </select>
+                    </div>
+                </form>
+
+                <!-- OPSI TOMBOL -->
+                <div class="flex flex-row justify-between gap-5">
+                    <button class="font-bold font-mono bg-[#1E3A8A] rounded-[5px] px-4 py-1 text-[#EAEAEA] text-[20px] shadow-md mt-[10px]">
+                        <a href="members_topup.html"> Cancel </a>
+                    </button>
+                    <button class="font-bold font-mono bg-[#1E3A8A] rounded-[5px] px-4 py-1 text-[#EAEAEA] text-[20px] shadow-md mt-[10px]">
+                        <a href="dashboard_admin.html"> Top-Up </a>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+    </body>
+</html>

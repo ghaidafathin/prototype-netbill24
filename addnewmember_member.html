@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title> Top-Up: userone </title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body>
+
+        <div class="min-h-screen flex justify-center items-center">
+            <!-- DIV UTAMA -->
+            <div class="w-[600px] h-[450px] bg-[#EAEAEA] px-10 py-6 flex flex-col  gap-5 shadow-md">
+
+                <!-- TITLE ACC INFO -->
+                <p class="font-mono font-bold text-[#1E3A8A] text-[25px] text-center"> Add New Member </p>
+
+                <!-- PILIHAN WAKTU -->
+                <form>
+                    <div class="flex flex-row justify-between">
+
+                        <div class="flex flex-col">
+                            <label class="block font-mono font-bold text-[#1E3A8A] text-[15px]">
+                                Username:
+                            </label>
+                                <input
+                                type="text"
+                                placeholder="Input username"
+                                class="w-full border-2 border-[#1E3A8A] pl-[10px] pr-[50px] py-[3px] font-mono focus:outline-none focus:ring-1 focus:ring-[#1E3A8A]"/>
+
+                            <label class="block font-mono font-bold text-[#1E3A8A] text-[15px]">
+                                Password:
+                            </label>
+                                <input
+                                type="text"
+                                placeholder="Input password"
+                                class="w-full border-2 border-[#1E3A8A] pl-[10px] pr-[50px] py-[3px] font-mono focus:outline-none focus:ring-1 focus:ring-[#1E3A8A]"/>
+
+                            <label class="block font-mono font-bold text-[#1E3A8A] text-[15px]">
+                                Email Address:
+                            </label>
+                                <input
+                                type="text"
+                                placeholder="Input email address"
+                                class="w-full border-2 border-[#1E3A8A] pl-[10px] pr-[50px] py-[3px] font-mono focus:outline-none focus:ring-1 focus:ring-[#1E3A8A]"/>
+
+                            <label class="block font-mono font-bold text-[#1E3A8A] text-[15px]">
+                                Date Joined:
+                            </label>
+                                <input
+                                type="text"
+                                placeholder="Input username"
+                                class="w-full border-2 border-[#1E3A8A] pl-[10px] pr-[50px] py-[3px] font-mono focus:outline-none focus:ring-1 focus:ring-[#1E3A8A]"/>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <label class="block font-mono font-bold text-[#1E3A8A] text-[15px]">
+                                Top-Up:
+                            </label>
+                            <select class="w-full border-2 border-[#1E3A8A] px-[10px] py-[5px] font-mono focus:outline-none">
+                                <option value=""> Add Time </option>
+                                <option value="1/2 hour"> 30 Minutes </option>
+                                <option value="1 hour"> 1 hour </option>
+                                <option value="1.5 hour"> 1 hour 30 Minutes </option>
+                                <option value="2 hour"> 2 hours </option>
+                                <option value="2.5 hour"> 2 hours 30 minutes </option>
+                                <option value="3 hour"> 3 hours </option>
+                                <option value="3.5 hour"> 3 hours 30 minutes </option>
+                                <option value="4 hour"> 4 hours </option>
+                                <option value="4.5 hour"> 4 hours 30 minutes </option>
+                                <option value="5 hour"> 5 hours </option>
+                            </select>
+
+                            <label class="block font-mono font-bold text-[#1E3A8A] text-[15px]">
+                                Choose Payment Method:
+                            </label>
+                            <select class="w-full border-2 border-[#1E3A8A] px-[10px] py-[5px] font-mono focus:outline-none">
+                                <option value=""> Payment Method </option>
+                                <option value="cash"> Cash </option>
+                                <option value="barcode"> QRIS </option>
+                            </select>
+
+                            <p class="font-mono font-bold text-[15px] text-[#1E3A8A] mt-5"> Total Payment: (Auto-Cal JS) </p>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- NOTE -->
+                <p class="font-mono italic text-[#1E3A8A] text-[15px]"> Minimum Top-up is Rp. 4.000,- (01:00:00) </p>
+                <!-- OPSI TOMBOL -->
+                <div class="flex flex-row justify-between gap-5">
+                    <button class="font-bold font-mono bg-[#1E3A8A] rounded-[5px] px-4 py-1 text-[#EAEAEA] text-[20px] shadow-md mt-[10px]">
+                        <a href="members_topup.html"> Cancel </a>
+                    </button>
+                    <button class="font-bold font-mono bg-[#1E3A8A] rounded-[5px] px-4 py-1 text-[#EAEAEA] text-[20px] shadow-md mt-[10px]">
+                        <a href="dashboard_admin.html"> Add </a>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+    </body>
+</html>

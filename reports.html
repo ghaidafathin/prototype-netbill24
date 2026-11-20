@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title> Reports </title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body>
+
+        <div class="flex flex-row gap-[5px]">
+            <!-- DIV SIDEBAR KIRI -->
+            <div class="h-screen flex items-center">
+                <!-- SIDEBAR MENU -->
+                <div class="w-[280px] h-[550px] bg-[#EAEAEA] mx-[20px] my-[20px]">
+                    <!-- TEKS MENU -->
+                    <div class="flex flex-row gap-5 ml-[20px] mt-[20px] items-center">
+                        <div class="flex flex-col gap-[5px]">
+                            <div class="w-[35px] h-[7px] bg-[#1E3A8A]"></div>
+                            <div class="w-[35px] h-[7px] bg-[#1E3A8A]"></div>
+                            <div class="w-[35px] h-[7px] bg-[#1E3A8A]"></div>
+                        </div>
+                        <h1 class="font-mono font-bold text-[#1E3A8A] text-[25px]"> MENU </h1>
+                    </div>
+
+                    <!-- LIST MENU -->
+                    <ul class="ml-[20px] mt-[30px] space-y-5">
+                        <li class="font-mono font-bold text-[#1E3A8A] text-[20px]"> <a href="dashboard_admin.html"> > Dashboard </a></li>
+                        <li class="font-mono font-bold text-[#1E3A8A] text-[20px]"> <a href="comp_status.html"> > Computer Status </a></li>
+                        <li class="font-mono font-bold text-[#1E3A8A] text-[20px]"> <a href="members_topup.html"> > Members & Top-Up </a></li>
+                        <li class="font-mono font-bold text-[#1E3A8A] text-[20px]"> <a href="settings.html"> > Settings </a></li>
+                        <li class="font-mono font-bold text-[#1E3A8A] text-[20px]"> <a href="reports.html class" class="bg-white opacity-70"> > Reports </a></li>
+                        <li class="font-mono font-bold text-[#1E3A8A] text-[20px]"> <a href="homepage.html"> > Log Out </a></li>
+                    </ul>
+
+                    <!-- LOGO FOOTER -->
+                    <div class="flex flex-col items-center">
+                    <img src="gambar/logonetbill.png" class="w-[150px] h-auto mt-[80px]">
+                    </div>
+                </div>
+            </div>
+
+            <!-- DIV SEBELAH KANAN -->
+            <div class="h-screen flex flex-col gap-[1px]">
+                <!-- HEADER REPORTS -->
+                <div class="w-[925px] h-[55px] bg-[#EAEAEA] my-[20px] flex items-center justify-center">
+                    <h1 class="font-mono font-bold text-[#1E3A8A] text-[30px]"> REPORTS </h1>
+                </div>
+
+                <div class="flex flex-row gap-2">
+                    <!-- LAPORAN -->
+                    <div class="w-[660px] h-[472px] bg-[#EAEAEA] p-2">
+                        <!-- TABLE REPORTS -->
+                        <table class="w-full border-collapse font-mono">
+                            <!-- JUDUL TABLE -->
+                            <thead>
+                                <tr class="border-b-2 border-[#1E3A8A] text-[#1E3A8A] text-[15px]">
+                                    <th class="py-2 text-center"> DATE TOP-UP </th>
+                                    <th class="py-2 text-center"> TOP-UP AMOUNT </th>
+                                    <th class="py-2 text-center"> USERNAME </th>
+                                    <th class="py-2 text-center"> PAYMENT METHOD </th>
+                                </tr>
+                            </thead>
+                            <!-- ISI TABLE -->
+                            <tbody>
+                                <tr class="border-b-2 border-[#1E3A8A] text-[#1E3A8A] text-[15px]">
+                                    <td class="py-2 text-center"> 31/12/2025 </td>
+                                    <td class="py-2 text-center"> Rp. 16.000,- | 04:00:00 </td>
+                                    <td class="py-2 text-center"> usertwo </td>
+                                    <td class="py-2 text-center"> Cash </td>
+                                </tr>
+                            </tbody>
+
+                            <tbody>
+                                <tr class="border-b-2 border-[#1E3A8A] text-[#1E3A8A] text-[15px]">
+                                    <td class="py-2 text-center"> 30/12/2025 </td>
+                                    <td class="py-2 text-center"> Rp. 20.000,- | 05:00:00 </td>
+                                    <td class="py-2 text-center"> userone </td>
+                                    <td class="py-2 text-center"> QRIS </td>
+                                </tr>
+                            </tbody>
+
+                            <tbody>
+                                <tr class="border-b-2 border-[#1E3A8A] text-[#1E3A8A] text-[15px]">
+                                    <td class="py-2 text-center"> 28/12/2025 </td>
+                                    <td class="py-2 text-center"> Rp. 8.000,- | 02:00:00 </td>
+                                    <td class="py-2 text-center"> userone </td>
+                                    <td class="py-2 text-center"> QRIS </td>
+                                </tr>
+                            </tbody>
+
+                            <tbody>
+                                <tr class="border-b-2 border-[#1E3A8A] text-[#1E3A8A] text-[15px]">
+                                    <td class="py-2 text-center"> 25/12/2025 </td>
+                                    <td class="py-2 text-center"> Rp. 8.000,- | 02:00:00 </td>
+                                    <td class="py-2 text-center"> usertwo </td>
+                                    <td class="py-2 text-center"> Cash </td>
+                                </tr>
+                            </tbody>
+
+                            <tbody>
+                                <tr class="border-b-2 border-[#1E3A8A] text-[#1E3A8A] text-[15px]">
+                                    <td class="py-2 text-center"> 25/12/2025 </td>
+                                    <td class="py-2 text-center"> Rp. 12.000,- | 03:00:00 </td>
+                                    <td class="py-2 text-center"> userone </td>
+                                    <td class="py-2 text-center"> QRIS </td>
+                                </tr>
+                            </tbody>
+
+                            <tbody>
+                                <tr class="border-b-2 border-[#1E3A8A] text-[#1E3A8A] text-[15px]">
+                                    <td class="py-2 text-center"> 24/12/2025 </td>
+                                    <td class="py-2 text-center"> Rp. 4.000,- | 01:00:00 </td>
+                                    <td class="py-2 text-center"> userone </td>
+                                    <td class="py-2 text-center"> Cash </td>
+                                </tr>
+                            </tbody>
+
+                            <tbody>
+                                <tr class="border-b-2 border-[#1E3A8A] text-[#1E3A8A] text-[15px]">
+                                    <td class="py-2 text-center"> - </td>
+                                    <td class="py-2 text-center"> - </td>
+                                    <td class="py-2 text-center"> - </td>
+                                    <td class="py-2 text-center"> - </td>
+                                </tr>
+                            </tbody>
+
+                            <tbody>
+                                <tr class="border-b-2 border-[#1E3A8A] text-[#1E3A8A] text-[15px]">
+                                    <td class="py-2 text-center"> - </td>
+                                    <td class="py-2 text-center"> - </td>
+                                    <td class="py-2 text-center"> - </td>
+                                    <td class="py-2 text-center"> - </td>
+                                </tr>
+                            </tbody>
+
+                            <tbody>
+                                <tr class="border-b-2 border-[#1E3A8A] text-[#1E3A8A] text-[15px]">
+                                    <td class="py-2 text-center"> - </td>
+                                    <td class="py-2 text-center"> - </td>
+                                    <td class="py-2 text-center"> - </td>
+                                    <td class="py-2 text-center"> - </td>
+                                </tr>
+                            </tbody>
+
+                            <tbody>
+                                <tr class="border-b-2 border-[#1E3A8A] text-[#1E3A8A] text-[15px]">
+                                    <td class="py-2 text-center"> - </td>
+                                    <td class="py-2 text-center"> - </td>
+                                    <td class="py-2 text-center"> - </td>
+                                    <td class="py-2 text-center"> - </td>
+                                </tr>
+                            </tbody>
+                            
+                        </table>
+                    </div>
+
+                    <!-- RANGKUMAN & BUTTON -->
+                    <div class="flex-col gap-3">
+                        <div class="w-[257px] h-[210px] bg-[#EAEAEA] p-2 flex flex-col gap-3">
+                            <p1 class="font-mono font-bold text-[#1E3A8A] text-[15px] text-center"> [ SUMMARY ] </p1>
+                            <ul class="font-mono font-bold text-[#1E3A8A] text-[15px]">
+                                <li> Total Minutes: 1.020 Min </li>
+                                <li> Total Amount: Rp. 68.000,- </li>
+                                <li> Average Top-Up: Rp. 11.300,- </li>
+                                <li> Most Used Payment: Cash + Qris </li>
+                                <li> Most Topped-Up Member: userone </li>
+                            </ul>
+                        </div>
+
+                        <!-- BUTTON -->
+                        <div class="flex flex-row justify-between mt-5">
+                            <button class="w-[80px] h-[35px] bg-[#EAEAEA] border-2 border-[#1E3A8A]">
+                                <a href="filter_reports.html" class="font-mono font-bold text-[#1E3A8A] text-[15px]"> Filter </a>
+                            </button>
+                            <button class="w-[120px] h-[35px] bg-[#1E3A8A]">
+                                <a href="" class="font-mono font-bold text-[#EAEAEA] text-[15px]"> Download PDF </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+</html>

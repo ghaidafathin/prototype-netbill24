@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title> Dashboard Member </title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body>
+        <div class="min-h-screen flex justify-center items-center">
+            <!-- DIV UTAMA -->
+            <div class="w-[45%] h-auto bg-[#EAEAEA] px-8 py-5 flex flex-col items-center gap-5 shadow-md">
+
+                <!-- HELLO USERNAME & MEMBER TYPE -->
+                <div class="self-start flex flex-row items-center w-full justify-between">
+                    <div class="flex flex-col gap-[1px] items-center">
+                        <h1 class="font-mono font-bold text-[#2563EB] text-[25px]"> [Hello, UserOne] </h1>
+                        <span class="font-mono italic text-[#2563EB] text-[20px]"> You're A Regular Member </span>
+                    </div>
+                    <div>
+                        <button class="font-bold font-mono bg-[#2563EB] rounded-[5px] px-4 py-1 text-[#EAEAEA] text-[20px] shadow-md">
+                            <a href="homepage.html"> Log Out </a>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- TIME REMAINING & LAST TOPUP -->
+                <div class="w-[400px] h-auto bg-[#2563EB] px-[10px] py-[10px]">
+                    <div class="flex flex-col items-start gap-2 ml-[15px] mb-2">
+                        <!-- SISA WAKTU -->
+                        <p1 class="font-mono font-bold text-[#EAEAEA] text-[15px]"> Your Time Remaining: </p1>
+                        <div class="w-[350px] h-[40px] border-[2px] border-[#EAEAEA] flex items-center justify-center">
+                            <span class="font-mono text-[#EAEAEA] text-[15px]"> 01:00:00 </span>
+                        </div>
+                        <!-- TOPUP TERAKHIR -->
+                        <p1 class="font-mono font-bold text-[#EAEAEA] text-[15px]"> Your Last Purchased Top-Up: </p1>
+                        <div class="w-[350px] h-[40px] border-[2px] border-[#EAEAEA] flex items-center justify-center">
+                            <span class="font-mono text-[#EAEAEA] text-[15px]"> Rp. 20.000,- (05:00:00) </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-2 items-center">
+                    <!-- RIWAYAT BILLING -->
+                    <a href="billinghistory_member.html" class="font-mono italic underline text-[#2563EB] text-[15px]"> Billing History </a>
+                    <!-- INFORMASI AKUN -->
+                    <a href="accinfo_member.html" class="font-mono italic underline text-[#2563EB] text-[15px]"> Account Information </a>
+                </div>
+
+                <!-- FOOTER LOGO -->
+                <img src="gambar/logonetbill.png" class="w-[200px] h-auto my-[10px] mt-[20px]">
+            </div>
+        </div>
+    </body>
+</html>
